@@ -6,7 +6,7 @@ import Image from "next/image";
 function Login() {
   return (
     <div className=" flex h-screen  bg-gray-100 items-center justify-center">
-      <div className="bg-white shadow-lg rounded-3xl  p-24 ">
+      <div className="bg-white shadow-lg rounded-3xl  p-24  ">
         <Image
           src="https://links.papareact.com/5me"
           height={200}
@@ -19,7 +19,13 @@ function Login() {
         >
           Login{" "}
         </h1>
-        <p class="text-gray-500 mt-2 pr-2 text-right text-xs">@jayChauhan</p>
+        <a
+          class=" mt-2  pl-40 text-red-500 no-underline md:hover:underline text-xs"
+          href="https://github.com/jay75chauhan"
+          target="_blank"
+        >
+          @jayChauhan
+        </a>
       </div>
     </div>
   );
