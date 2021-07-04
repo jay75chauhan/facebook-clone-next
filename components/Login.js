@@ -12,18 +12,18 @@ function Login() {
         <link rel="icon" href="https://links.papareact.com/5me" />
       </Head>
 
-      <div className="bg-white  shadow-lg rounded-3xl  p-24  ">
-        <div className="animate-bounce">
+      <div className="bg-white  shadow-lg rounded-3xl items-center justify-center p-12 sm:p-24  ">
+        <div className="animate-bounce flex  items-center justify-center">
           <Image
             src="https://links.papareact.com/5me"
-            height={200}
-            width={200}
+            height={150}
+            width={150}
             object-fit="contain"
           />
         </div>
         <h1
           onClick={signIn}
-          className="p-4 text-xl hover:text-gray-900 transition duration-200 transform ease-in hover:scale-105 hover:shadow-md mt-8  bg-blue-500  rounded-full text-white text-center cursor-pointer"
+          className="p-3 text-xl hover:text-gray-900 transition duration-200 transform ease-in hover:scale-105 hover:shadow-md mt-8  bg-blue-500  rounded-full text-white text-center cursor-pointer"
         >
           Login{" "}
         </h1>

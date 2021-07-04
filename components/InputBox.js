@@ -72,18 +72,17 @@ function InputBox() {
 
   return (
     <div className="bg-white rounded-2xl  shadow-md text-gray-500 font-medium mt-6">
-      <div className="flex space-x-4 p-4 items-center">
+      <div className="flex space-x-1 sm:space-x-4 p-4 items-center">
         <Image
           src={session.user.image}
-          className="rounded-full "
+          className="rounded-full"
           width={40}
           height={40}
-          layout="fixed"
         />
-        <form className="flex flex-1">
+        <form className="flex flex-1  ">
           <input
             ref={inputRef}
-            className="rounded-full h-12 bg-gray-100 shadow-md flex-grow px-5 focus:outline-none"
+            className="rounded-full sm:text-lg text-sm h-9 sm:h-12 bg-gray-100 shadow-md flex-grow px-2 py-1 sm:px-5 focus:outline-none"
             type="text"
             placeholder={`what's on your mind,${session.user.name}?`}
           />
@@ -103,11 +102,15 @@ function InputBox() {
       <div className="flex justify-evenly p-3 border-t">
         <div className="inoutIcon">
           <VideoCameraIcon className="h-7 text-red-500 " />
-          <p className="text-xs sm:text-sm xl:text-base">Live Video</p>
+          <p className="text-xs hidden sm:inline-flex sm:text-sm xl:text-base">
+            Live Video
+          </p>
         </div>
         <div onClick={() => filepickeRef.current.click()} className="inoutIcon">
           <CameraIcon className="h-7 text-green-500 " />
-          <p className="text-xs sm:text-sm xl:text-base">Photo/Video</p>
+          <p className="text-xs hidden sm:inline-flex sm:text-sm xl:text-base">
+            Photo/Video
+          </p>
           <input
             type="file"
             hidden
@@ -117,7 +120,9 @@ function InputBox() {
         </div>
         <div className="inoutIcon">
           <EmojiHappyIcon className="h-7 text-yellow-500 " />
-          <p className="text-xs sm:text-sm xl:text-base">Feeling/Activity</p>
+          <p className="text-xs hidden sm:inline-flex sm:text-sm xl:text-base">
+            Feeling/Activity
+          </p>
         </div>
       </div>
     </div>
