@@ -4,19 +4,15 @@ import StoryCard from "./StoryCard";
 const stories = [
   {
     name: "jay",
-    src: "https://links.papareact.com/4zn",
-    profiles: "https://links.papareact.com/kxk",
+    src: "https://images.unsplash.com/photo-1596230529625-7ee10f7b09b6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fG5ldmVyJTIwZ2l2ZSUyMHVwfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    profiles: "https://avatars.githubusercontent.com/u/66429052?v=4",
   },
   {
     name: "Elone Musk",
     src: "https://links.papareact.com/4zn",
     profiles: "https://links.papareact.com/kxk",
   },
-  {
-    name: "Jeff Bezoz",
-    src: "https://links.papareact.com/k2j",
-    profiles: "https://links.papareact.com/f0p",
-  },
+
   {
     name: "Mark Zukerberg",
     src: "https://links.papareact.com/xql",
@@ -31,7 +27,7 @@ const stories = [
 
 function Stories() {
   return (
-    <div className="flex justify-center space-x-3 mx-auto">
+    <div className="flex justify-center space-x-3 ">
       {stories.map((story) => (
         <StoryCard
           key={story.src}

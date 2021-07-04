@@ -4,7 +4,7 @@ import { ChatAltIcon, ShareIcon, ThumbUpIcon } from "@heroicons/react/outline";
 
 function Post({ name, postImage, image, timestamp, message }) {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col overflow-auto ">
       <div className="p-5 bg-white mt-5 rounded-t-2xl shadow-md">
         <div className="flex items-center space-x-2">
           <img

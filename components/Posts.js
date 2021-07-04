@@ -8,7 +8,7 @@ function Posts({ posts }) {
     db.collection("posts").orderBy("timestamp", "desc")
   );
   return (
-    <div>
+    <div className="overflow-auto">
       {realtimePost
         ? realtimePost?.docs.map((post) => (
             <Post
