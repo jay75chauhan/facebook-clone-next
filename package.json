@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@clerk/clerk-react": "^1.13.1",
     "@heroicons/react": "^1.0.1",
     "firebase": "^8.6.8",
     "next": "10.2.0",
