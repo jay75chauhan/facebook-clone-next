@@ -5,6 +5,7 @@ import {
   ChatIcon,
   ChevronDownIcon,
   HomeIcon,
+  LogoutIcon,
   UserGroupIcon,
   ViewGridIcon,
 } from "@heroicons/react/solid";
@@ -54,14 +55,18 @@ function Header() {
 
       {/* right */}
 
-      <div className="items-center  flex sm:space-x-2 justify-end">
+      <div className="items-center  flex sm:space-x-2 justify-end ">
         <Image
           src={session.user.image}
           onClick={signOut}
-          className="rounded-full cursor-pointer "
+          className="rounded-full   "
           width="40"
           height="40"
           layout="fixed"
+        />
+        <LogoutIcon
+          className="h-5 text-center cursor-pointer sm:h-7 text-gray-500 mx-auto hover:text-blue-500 hover:animate-spin "
+          onClick={signOut}
         />
 
         <p className=" hidden md:inline-flex font-semibold pr-3 whitespace-normal">
