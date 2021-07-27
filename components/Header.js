@@ -5,7 +5,6 @@ import {
   ChatIcon,
   ChevronDownIcon,
   HomeIcon,
-  LogoutIcon,
   UserGroupIcon,
   ViewGridIcon,
 } from "@heroicons/react/solid";
@@ -21,7 +20,7 @@ import { signOut, useSession } from "next-auth/client";
 function Header() {
   const [session] = useSession();
   return (
-    <div className=" sticky top-0 z-50 bg-white flex items-center p-2 lg:p-5  shadow-md">
+    <div className=" sticky top-0 z-10 bg-white flex items-center p-2 lg:p-5  shadow-md">
       {/* left */}
 
       <div className="flex  items-center">
@@ -55,19 +54,19 @@ function Header() {
 
       {/* right */}
 
-      <div className="items-center  flex sm:space-x-2 justify-end ">
+      <div className="items-center relative group  flex sm:space-x-2 justify-end ">
         <Image
           src={session.user.image}
           onClick={signOut}
-          className="rounded-full   "
+          className="rounded-full  cursor-not-allowed"
           width="40"
           height="40"
           layout="fixed"
         />
-        <LogoutIcon
-          className="h-5 text-center cursor-pointer sm:h-7 text-gray-500 mx-auto hover:text-blue-500 hover:animate-spin "
-          onClick={signOut}
-        />
+
+        <p className=" hidden animate-bounce font-bold  group-hover:flex text-xs bg-gray-300 absolute z-50 left-[-25px] md:left-[-50px] md:text-sm bottom-[-25px] md:bottom-[-28px] p-1 rounded-md hover:text-white shadow-lg">
+          Log Out{" "}
+        </p>
 
         <p className=" hidden md:inline-flex font-semibold pr-3 whitespace-normal">
           {session.user.name}
