@@ -5,14 +5,14 @@ import Image from "next/image";
 
 function Login() {
   return (
-    <div className=" flex h-screen  bg-gray-100 items-center justify-center">
+    <div className=" flex h-screen bg  bg-gradient-to-br from-gray-700 to-gray-200 items-center justify-center">
       <Head>
         <title>Login Account</title>
         <meta name="description" content="login " />
         <link rel="icon" href="https://links.papareact.com/5me" />
       </Head>
 
-      <div className="bg-white  shadow-lg rounded-3xl items-center justify-center p-12 sm:p-24  ">
+      <div className="bg-gray-200  shadow-2xl  rounded-3xl items-center justify-center p-12 sm:p-24  ">
         <div className="animate-bounce flex  items-center justify-center">
           <Image
             src="https://links.papareact.com/5me"
@@ -28,7 +28,7 @@ function Login() {
           Login{" "}
         </h1>
         <a
-          class=" mt-4  pl-32 text-red-500 no-underline md:hover:underline text-xs"
+          class=" mt-4  pl-32 text-gray-400 hover:text-gray-500 hover:underline no-underline md:hover:underline text-xs"
           href="https://github.com/jay75chauhan"
           target="_blank"
         >
